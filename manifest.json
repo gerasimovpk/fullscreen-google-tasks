@@ -1,0 +1,23 @@
+{
+  "name": "Full screen Google Tasks",
+  "version": "0.1",
+  "manifest_version": 3,
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://tasks.google.com/embed/*"
+      ],
+      "all_frames": true,
+      "js": [
+        "content_script.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
