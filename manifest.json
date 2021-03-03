@@ -15,9 +15,10 @@
       ],
       "all_frames": true,
       "js": [
+        "/scripts/dom_utils.js",
+        "/scripts/wait_and_execute_helper.js",
         "content_script.js"
-      ],
-      "run_at": "document_end"
+      ]
     }
   ]
 }
