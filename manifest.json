@@ -1,6 +1,6 @@
 {
   "name": "Fullscreen mode for Google Tasks widget",
-  "version": "0.1",
+  "version": "0.1.1",
   "manifest_version": 3,
   "icons": {
     "32": "/icons/icon32.png",
