@@ -2,7 +2,7 @@ isOpenedInFullscreen = () => document.body.style.display == 'none';
 
 isTasksWidgetLoaded = () => {
     // TODO: find more robust way
-    let titleDiv = document.querySelectorAll("h2")[0].parentElement;
+    let titleDiv = document.querySelectorAll("h2")[0].parentElement.parentElement;
 
     let hasTitle = document.querySelectorAll("h2").length != 0;
     let hasCloseButton = !!titleDiv.parentElement.querySelectorAll("[role='button']")[1];
@@ -11,7 +11,7 @@ isTasksWidgetLoaded = () => {
 }
 
 applyFullscreenButton = () => {
-    let titleDiv = document.querySelectorAll("h2")[0].parentElement;
+    let titleDiv = document.querySelectorAll("h2")[0].parentElement.parentElement;
 
     let closeButton = titleDiv.parentElement.querySelectorAll("[role='button']")[1];
     let newButton = closeButton.cloneNode(true);
